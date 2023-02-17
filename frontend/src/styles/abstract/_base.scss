@@ -1,0 +1,11 @@
+@import './variables';
+
+body {
+    font-family: $font-Montserrat;
+    background-color: $color-grey-background;
+    color: $color-white;
+}
+
+*:focus{
+    outline: none;
+}
