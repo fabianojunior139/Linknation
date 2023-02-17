@@ -1,0 +1,28 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS public.users
+(
+    id serial NOT NULL,
+    name character varying NOT NULL,
+    email character varying NOT NULL,
+    password character varying NOT NULL,
+    PRIMARY KEY (id)
+);
+	
+CREATE TABLE IF NOT EXISTS public.links
+(
+	id serial NOT NULL,
+	link_title character varying NOT NULL,
+	link character varying NOT NULL,
+	id_user integer NOT NULL,
+	PRIMARY KEY (id)
+);
+
+ALTER TABLE IF EXISTS public.links
+ADD FOREIGN KEY (id_user)
+REFERENCES public.users (id) MATCH SIMPLE
+ON UPDATE NO ACTION
+ON DELETE NO ACTION
+NOT VALID;
+
+END;
