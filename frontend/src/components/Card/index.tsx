@@ -14,7 +14,6 @@ export interface ILink {
     id_user?: number,
 }
 
-
 const Card = ({ id, link_title, link }: ILink) => {
 
     const { user } = useContext(AuthContext);
@@ -47,7 +46,7 @@ const Card = ({ id, link_title, link }: ILink) => {
                                 <span><i className="card__content-infos-icon" onClick={excludeLink}><AiOutlineDelete /></i></span>
                             </div>
                         </div>
-                        <a href={`${link}`} className="card__content-link">{link}</a>
+                        <a href={`${link}`} target='__blank' className="card__content-link">{link}</a>
                     </div>
 
                 </main>
