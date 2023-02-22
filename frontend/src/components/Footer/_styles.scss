@@ -1,0 +1,30 @@
+@import '../../styles/abstract/variables';
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    transition: 0.5s;
+    font-family: $font-Montserrat;
+    background-color: $color-green;
+
+    &__title {
+        margin-top: 1rem;
+        font-weight: 700;
+    }
+
+    &__details {
+        font-size: 12px;
+        text-align: center;
+        padding: 2em;
+        transition: 0.25s;
+    }
+
+    &:hover {
+        height: 5.5rem;
+        background-color: $color-green-dark;
+    }
+}

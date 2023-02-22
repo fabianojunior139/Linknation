@@ -6,6 +6,7 @@ import { useContext, useEffect, useState } from "react";
 import AuthContext from "../../context/AuthContext";
 import { authApi } from "../../database/api";
 import CreateNewLink from "../../components/CreateNewLink";
+import Footer from "../../components/Footer";
 
 import './_styles.scss';
 
@@ -73,6 +74,8 @@ const Home = () => {
                     <CreateNewLink returnToLinks={setTypeForm} />
                 }
             </div>
+
+            <Footer />
         </main>
     )
 }
