@@ -1,0 +1,94 @@
+@import '../../styles/abstract/variables';
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-bottom: 2rem;
+
+    &__content {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        &-cards {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        &-card {
+            width: 20rem;
+            height: 6rem;
+            border: 1px solid $color-green;
+            margin-left: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: $color-grey-background2;
+            padding: 1rem;
+
+            &-new-link {
+                display: flex;
+                align-items: center;
+                align-self: center;
+                justify-content: center;
+                font-size: 1.25rem;
+                border: 1px solid $color-green;
+                padding: 1rem;
+                color: $color-white;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                transition: 0.25s;
+                font-family: $font-Montserrat;
+
+                &:hover {
+                    background-color: $color-green;
+                }
+
+                &-icon {
+                    color: $color-white;
+                    margin-left: 0.25rem;
+                    font-size: 1.5rem;
+                    height: 24px;
+                }
+            }
+
+            &-filter {
+                display: flex;
+                flex-direction: column;
+
+                &-infos {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &-title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                &-input {
+                    padding: 0.8rem;
+                    margin-top: 0.5rem;
+                    border-radius: 0.5rem;
+                    width: 100%;
+                    background-color: $color-white;
+                    color: $color-black;
+                    border: none;
+                    font-family: $font-Montserrat;
+
+                    &::placeholder {
+                        color: black;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

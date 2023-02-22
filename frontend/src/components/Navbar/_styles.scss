@@ -1,0 +1,47 @@
+@import '../../styles/abstract/variables';
+
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    background-color: $color-grey-background2;
+    display: flex;
+    align-items: center;
+
+    &-content {
+        width: 1000px;
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0.5rem;
+
+        &__itens {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__list-itens {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 100%;
+        }
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            width: 8rem;
+            padding: 1.90rem 0;
+            text-decoration: none;
+            color: $color-white;
+            font-size: 1.125rem;
+            transition: 0.25s;
+
+            &:hover {
+                background-color: $color-green;
+            }
+        }
+    }
+}

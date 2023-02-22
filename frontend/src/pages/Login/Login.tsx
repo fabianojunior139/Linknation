@@ -28,7 +28,7 @@ const Login = () => {
             alert('usuário inválido');
         }
     }
-    
+
     return (
 
         <main className='login-page'>
@@ -43,9 +43,11 @@ const Login = () => {
 
                     <label className='login-page__label' htmlFor="user">Senha</label>
                     <input className='login-page__input' type="password" name='password' id='password' required placeholder='**********' onChange={(e) => { updateUser(e) }} />
-                    <span className='login-page__password'><a href='/recuperaSenha' className='login-page__password-link' >Esqueci minha senha</a></span>
+                    <span className='login-page__password'><a href='/recuperaSenha' className='login-page__password-link'>Esqueci minha senha</a></span>
 
                     <button type='submit' className='login-page__button'>ENTRAR</button>
+
+                    <span>Não tem uma conta? <a href='/' className='login-page__link-to-register'>Inscreva-se</a></span>
                 </form>
 
                 <div className="login-page__social-icons">

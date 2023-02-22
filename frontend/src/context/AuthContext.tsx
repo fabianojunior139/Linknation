@@ -2,7 +2,6 @@ import { createContext, useState } from "react";
 import { authApi } from "../database/api";
 
 export interface IUser {
-    id_endereco: any;
     id: number,
     name: string,
     email: string,

@@ -4,5 +4,25 @@ $color-grey-background: #191919;
 $color-grey-background2: #202024;
 $color-white: #FFFFFF;
 $color-black: #000000;
+$color-red: #EB455F;
 
-$font-Montserrat: 'Montserrat', sans-serif;
+$font-Montserrat: 'Montserrat',
+sans-serif;
+
+@mixin button() {
+    width: 100%;
+    border: none;
+    background-color: $color-green;
+    padding: 1rem;
+    color: $color-white;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: $font-Montserrat;
+    font-size: 1rem;
+    transition: 0.25s;
+
+    &:hover {
+        background-color: $color-green-dark;
+    }
+}

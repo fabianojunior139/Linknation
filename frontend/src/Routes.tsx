@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from "./pages/Login/Login";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 import AuthContext from "./context/AuthContext";
 import UserRegistration from "./pages/UserRegistration";
 import RecoverPassword from "./pages/RecoverPassword";

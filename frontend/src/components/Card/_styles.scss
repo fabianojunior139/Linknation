@@ -1,0 +1,48 @@
+@import '../../styles/abstract/variables';
+
+.card {
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background-color: $color-grey-background2;
+    padding: 1.25rem;
+    margin-top: 0.5rem;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        &-infos {
+            display: flex;
+            justify-content: space-between;
+
+            &-link-title{
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+
+            &-icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-icon {
+                color: $color-red;
+                font-size: 1.5rem;
+                margin-left: 0.5rem;
+                cursor: pointer;
+                transition: 0.25s;
+
+                &:hover {
+                    color: $color-green;
+                }
+            }
+        }
+
+        &-link {
+            margin-top: 0.5rem;
+            color: $color-white;
+        }
+    }
+}

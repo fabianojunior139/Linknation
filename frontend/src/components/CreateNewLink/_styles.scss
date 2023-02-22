@@ -1,0 +1,54 @@
+@import '../../styles/abstract/variables';
+
+.create-new-link-page {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey-background2;
+    width: 40rem;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border: 1px solid $color-green;
+    margin: 2rem auto;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            font-size: 1.55rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        &-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-right: 0.25rem;
+        }
+    }
+
+
+    &__label {
+        align-self: flex-start;
+        font-weight: 400;
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+        margin-top: 1rem;
+        font-family: $font-Montserrat;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-family: $font-Montserrat;
+    }
+
+    &__button {
+        @include button();
+        margin-top: 1rem;
+        width: 10rem;
+        align-self: center;
+    }
+}

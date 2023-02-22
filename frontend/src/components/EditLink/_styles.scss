@@ -1,0 +1,68 @@
+@import '../../styles/abstract/variables';
+
+.edit-link {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+
+    &-form {
+        position: fixed;
+        top: 45%;
+        left: 50.4%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        background-color: $color-grey-background2;
+        width: 40.5rem;
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+        border: 1px solid $color-green;
+        margin: 2rem auto;
+
+        &__head {
+            display: flex;
+            justify-content: space-between;
+
+            &-title {
+                font-size: 1.55rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+
+            &-icon {
+                font-size: 1.5rem;
+                cursor: pointer;
+                margin-right: 0.25rem;
+            }
+        }
+
+
+        &__label {
+            align-self: flex-start;
+            font-weight: 400;
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            font-family: $font-Montserrat;
+        }
+
+        &__input {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: $font-Montserrat;
+        }
+
+        &__button {
+            @include button();
+            margin-top: 1rem;
+            width: 10rem;
+            align-self: center;
+        }
+    }
+}

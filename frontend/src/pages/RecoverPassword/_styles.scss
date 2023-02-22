@@ -9,14 +9,14 @@
 
     &__card {
         background-color: $color-grey-background2;
-        width: 40rem;
-        height: 35rem;
+        width: 30rem;
+        height: 30rem;
         border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        padding: 1.25rem 2.5rem;
     }
 
     &__text {

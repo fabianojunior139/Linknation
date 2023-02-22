@@ -30,7 +30,7 @@ class AuthController {
             if (verifyPass === true) {
                 const token = jwt.sign({ userId }, SECRET, { expiresIn: '12h' });
 
-                delete user.senha;
+                delete user.password;
 
                 user.token = token;
                 user.auth = true;
