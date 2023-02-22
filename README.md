@@ -3,7 +3,7 @@
  <p>O objeto desta aplicação é desenvolver uma aplicação para salvar links de artigos de tecnologia com uma interface onde o usuário possa gerenciar os links salvos</p>
 
 ## 🖥 Preview
-Em construção
+<img src="https://github.com/fabianojunior139/Linknation/blob/main/frontend/src/assets/img/Linknation.png">
 
 ## :heavy_check_mark: Features
 - [x] Sistema de login
