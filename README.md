@@ -7,7 +7,6 @@
 
 ## :heavy_check_mark: Features
 - [x] Sistema de login
-- [ ] Cadastro, Lista, Edição e Exclusão de usuários 
 - [x] Cadastro, Lista, Edição e Exclusão dos links cadastrados
 - [x] Proteção de rotas do back-end (Json Web Token)
 - [x] Filtros de pesquisa: possibilidade de filtro nos títulos dos links
