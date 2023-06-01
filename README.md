@@ -1,6 +1,6 @@
  <h1 align="center">Linknation 🔗</h1>
  <p>Este sistema foi feito com base em um desafio proposto pelo programa de Trainee da IN8</p>
- <p>O objeto desta aplicação é desenvolver uma aplicação para salvar links de artigos de tecnologia com uma interface onde o usuário possa gerenciar os links salvos</p>
+ <p>O objetivo desta aplicação é desenvolver um sistema para salvar links de artigos de tecnologia com uma interface onde o usuário possa gerenciar os links salvos</p>
 
 ## 🖥 Preview
 <img src="https://github.com/fabianojunior139/Linknation/blob/main/frontend/src/assets/img/Linknation.gif">
